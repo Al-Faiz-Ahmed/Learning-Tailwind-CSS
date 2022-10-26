@@ -2,3 +2,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nav-links #nav-indicator {
+  position: absolute;
+  bottom: -1.6rem;
+  @apply bg-red-600 transition-[width,left] rounded-tl-md rounded-tr-md;
+  height: 4px;
+}
+
+.nav-links .indicator-default {
+  left: 0;
+  width: 75px;
+}
+.nav-links .indicator-switch {
+  left: 87px;
+  width: 160px;
+}
+.navActive {
+  @apply text-red-600;
+}
+.navDefault {
+  @apply text-gray-400 hover:text-gray-500 transition-colors duration-300;
+}
+
+.cardWrapper:hover{
+  @apply bg-red-600 cursor-pointer transition;
+}
+.cardWrapper:hover .categoryIcon svg path,
+.cardWrapper:hover .content svg path{
+  @apply stroke-white
+}
+.cardWrapper:hover .content:has(h4,p){
+  @apply text-white
+}
