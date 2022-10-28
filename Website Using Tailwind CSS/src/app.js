@@ -1,24 +1,31 @@
-let navlinksParent = [
-  ...document.getElementsByClassName("nav-links")[0].children,
-];
+let navlinksParent = document.getElementsByClassName("nav-links")[0]
+let findJobs = navlinksParent.querySelector('a[data-label="Find Jobs"]') 
+let discoverComp = navlinksParent.querySelector('a[data-label="Discover Companies"]') 
 
-let navigate = (event) => {
-  //   console.log(navlinksParent[3]);
-  //   navlinksParent[3].className = "indicator-default"
+console.log(navlinksParent);
+
+function navigate (event){
   for (var i in ["1", "2"]) {
-    navlinksParent[i].className = "navDefault";
+    navlinksParent.children[i].className = "navDefault";
   }
   for (var i in ["1", "2"]) {
     for (var j in ["1"]) {
-      navlinksParent[i].children[j].getAttribute("data-label") ===
+      navlinksParent.children[i].children[j].getAttribute("data-label") ===
         event.getAttribute("data-label") &&
         (event.parentElement.className = "navActive");
 
       if (event.getAttribute("data-label") === "Find Jobs") {
-        navlinksParent[3].className = "indicator-default";
+        navlinksParent.children[3].className = "indicator-default";
       } else {
-        navlinksParent[3].className = "indicator-switch";
+        navlinksParent.children[3].className = "indicator-switch";
       }
     }
   }
 };
+
+findJobs.addEventListener('click',()=>{
+  navigate(findJobs)
+})
+discoverComp.addEventListener('click',()=>{
+  navigate(discoverComp)
+})

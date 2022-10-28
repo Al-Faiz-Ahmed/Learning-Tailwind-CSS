@@ -26,17 +26,17 @@
           class="nav-links relative hidden md:flex gap-3 font-semibold ml-6 grow"
         >
           <li class="navActive">
-            <a data-label="Find Jobs" onclick="navigate(this)" href="#"
+            <a data-label="Find Jobs" href="#"
               >Find Jobs</a
             >
           </li>
           <li class="navDefault">
-            <a data-label="Discover Companies" onclick="navigate(this)" href="#"
+            <a data-label="Discover Companies" href="#"
               >Discover Companies</a
             >
           </li>
           <li class="navActive ml-auto">
-            <a data-label="Find Jobs" href="#">Log in</a>
+            <a href="#!">Log in</a>
           </li>
           <span id="nav-indicator" class="indicator-default"></span>
         </ul>
@@ -88,7 +88,6 @@
             </button>
           </form>
         </div>
-<!-- top-28 -->
           <div class="hidden md:block absolute bottom-0 right-[-25%]">
             <img
             class="-rotate-1 max-w-[65vw]"
@@ -900,6 +899,6 @@
       </div>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js" defer type="module"></script>
   </body>
 </html>
