@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Japan</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    
+    <script type="module" crossorigin src="/scripts/main-8219ec83.js"></script>
+    <link rel="stylesheet" href="/styles/index-bae5646b.css">
+  </head>
+  <body class="font-inter">
+    <!-- Header -->
+    <header
+      class="border-b-gray-300 border md:bg-[#F8F8FD] md:border-none px-3"
+    >
+      <nav class="md:max-w-[1300px] md:mx-auto flex items-center py-2">
+        <div>
+          <img
+            class="w-44 md:w-64"
+            src="/assets/Logo.svg"
+            alt="Campus Japan"
+            title="Campus Japan Logo"
+          />
+        </div>
+        <ul
+          class="nav-links relative hidden md:flex gap-3 font-semibold ml-6 grow"
+        >
+          <li class="navActive">
+            <a data-label="Find Jobs" href="#"
+              >Find Jobs</a
+            >
+          </li>
+          <li class="navDefault">
+            <a data-label="Discover Companies" href="#"
+              >Discover Companies</a
+            >
+          </li>
+          <li class="navActive ml-auto">
+            <a href="#!">Log in</a>
+          </li>
+          <span id="nav-indicator" class="indicator-default"></span>
+        </ul>
+        <div class="ml-auto md:hidden">
+          <button class="w-10 h-10 flex rounded-full border-gray-300 border">
+            <img
+              class="m-auto"
+              src="/assets/hamburger.svg"
+              alt="Hamburger Menu Icon"
+            />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="overflow-hidden landingSection  font-display bg-[#F8F8FD] px-3 py-7 md:h-[calc(100vh-73px)]"
+      >
+        <div class="relative md:mx-auto md:max-w-[1300px] h-full">
+          <div class="relative z-[10]">
+
+          <h2
+            class="leading-[1.1] text-5xl md:text-[clamp(48px,5vw,72px)] md:mt-16 md:max-w-[850px] font-bold text-gray-700 break-words"
+          >
+            Get headhunted by Japanese Companies
+          </h2>
+          <p
+            class="text-lg md:text-xl text-gray-400 mt-3 md:mt-7 md:max-w-[530px]"
+          >
+            land your first job with leading japanese industries and startups in
+            your field
+          </p>
+          <form
+            class="bg-white mt-8 p-5 md:p-10 md:max-w-[530px] md:flex items-end gap-x-4"
+          >
+            <div class="mb-3 flex-1">
+              <input
+                type="email"
+                class="w-full outline-none md:pb-2 border-gray-300 border-b-[1px]"
+                placeholder="email@xyz.com"
+              />
+            </div>
+            <button
+              onclick="return false"
+              class="bg-red-600 hover:bg-red-700 transition font-bold text-white mt-5 md:mt-0 py-4 md:px-10 w-full md:w-auto"
+            >
+              Sign Up
+            </button>
+          </form>
+        </div>
+          <div class="hidden md:block absolute bottom-0 right-[-25%]">
+            <img
+            class="-rotate-1 max-w-[65vw]"
+              src="/assets/Mountain-Vector.png"
+              alt="Mountain Red Vector Sun"
+            />
+          </div>
+        </div>
+        
+      </section>
+      <section class="ourpartners px-3 pt-5">
+        <div class="md:mx-auto md:max-w-[1300px]">
+          <h2 class="text-2xl font-bold mb-5 text-gray-300">Our Partners</h2>
+          <div
+            class="imagesContainer flex gap-y-8 gap-x-3 justify-around md:justify-between items-center flex-wrap"
+          >
+            <img class="w-28" src="/assets/partner1.png" alt="honda" />
+            <img class="w-28" src="/assets/partner2.png" alt="sony" />
+            <img class="w-28" src="/assets/partner3.png" alt="ninetendo" />
+            <img class="w-24" src="/assets/partner4.png" alt="intel" />
+            <img class="w-24" src="/assets/partner5.png" alt="amd" />
+          </div>
+        </div>
+      </section>
+      <section class="category font-display pt-16 px-3">
+        <div class="md:mx-auto md:max-w-[1300px]">
+          <div class="text-3xl font-bold mb-5 flex items-baseline">
+            <h2>Explore by <span class="text-red-600">category</span></h2>
+            <button
+              class="hidden md:block ml-auto text-base text-red-600 font-semibold"
+            >
+              Show all jobs
+              <svg
+                class="inline-block ml-2"
+                width="18"
+                height="15"
+                viewBox="0 0 18 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.75 7.22571L1.75 7.22571"
+                  class="stroke-red-600"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                  class="stroke-red-600"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div
+            class="cardContainer flex flex-col md:flex-row flex-wrap gap-y-7 md:justify-between"
+          >
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_98_397)">
+                    <path
+                      d="M5 35.0001H11.6667L33.3333 13.3334C34.2174 12.4493 34.714 11.2503 34.714 10.0001C34.714 8.74981 34.2174 7.55078 33.3333 6.66672C32.4493 5.78267 31.2502 5.28601 30 5.28601C28.7498 5.28601 27.5507 5.78267 26.6667 6.66672L5 28.3334V35.0001Z"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M24.1666 9.16663L30.8333 15.8333"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M20 13.3333L11.6667 5L5 11.6667L13.3333 20"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.6666 13.3334L9.16663 15.8334"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M26.6667 20L35 28.3333L28.3333 35L20 26.6667"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M26.6666 28.3334L24.1666 30.8334"
+                      class="stroke-red-600"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_98_397">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Design</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>25 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6667 18.3333C15.3486 18.3333 18.3333 15.3486 18.3333 11.6667C18.3333 7.98477 15.3486 5 11.6667 5C7.98477 5 5 7.98477 5 11.6667C5 15.3486 7.98477 18.3333 11.6667 18.3333Z"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M11.6666 5V11.6667H18.3333"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15 28.3334V35"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M28.3334 23.3334V35"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M21.6666 21.6666V35"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M35 20V35"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Sales</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>765 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.3333 9.80333V32.0667C18.3328 32.7574 18.0885 33.4259 17.6435 33.9542C17.1985 34.4826 16.5813 34.8369 15.9007 34.9549C15.22 35.0728 14.5196 34.9467 13.9228 34.5989C13.326 34.251 12.8711 33.7037 12.6383 33.0533L9.05992 22.8033M29.9999 21.6667C31.326 21.6667 32.5978 21.1399 33.5355 20.2022C34.4731 19.2645 34.9999 17.9927 34.9999 16.6667C34.9999 15.3406 34.4731 14.0688 33.5355 13.1311C32.5978 12.1935 31.326 11.6667 29.9999 11.6667V21.6667ZM9.05992 22.805C7.64529 22.2035 6.4819 21.1318 5.76664 19.7711C5.05138 18.4105 4.82818 16.8445 5.13482 15.3382C5.44145 13.8319 6.25908 12.4778 7.44934 11.505C8.63961 10.5322 10.1294 10.0006 11.6666 10H14.7199C21.5533 10 27.4283 7.94333 29.9999 5V28.3333C27.4283 25.39 21.5549 23.3333 14.7199 23.3333H11.6666C10.771 23.3346 9.88434 23.1549 9.05992 22.805Z"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Marketing</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>140 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.3333 15V11.6667C28.3333 10.7827 27.9821 9.93481 27.357 9.30968C26.7319 8.68456 25.8841 8.33337 25 8.33337H8.33333C7.44928 8.33337 6.60143 8.68456 5.97631 9.30968C5.35119 9.93481 5 10.7827 5 11.6667V21.6667C5 22.5508 5.35119 23.3986 5.97631 24.0237C6.60143 24.6489 7.44928 25 8.33333 25H11.6667M15 31.6667H31.6667C32.5507 31.6667 33.3986 31.3155 34.0237 30.6904C34.6488 30.0653 35 29.2174 35 28.3334V18.3334C35 17.4493 34.6488 16.6015 34.0237 15.9764C33.3986 15.3512 32.5507 15 31.6667 15H15C14.1159 15 13.2681 15.3512 12.643 15.9764C12.0179 16.6015 11.6667 17.4493 11.6667 18.3334V28.3334C11.6667 29.2174 12.0179 30.0653 12.643 30.6904C13.2681 31.3155 14.1159 31.6667 15 31.6667ZM26.6667 23.3334C26.6667 24.2174 26.3155 25.0653 25.6904 25.6904C25.0652 26.3155 24.2174 26.6667 23.3333 26.6667C22.4493 26.6667 21.6014 26.3155 20.9763 25.6904C20.3512 25.0653 20 24.2174 20 23.3334C20 22.4493 20.3512 21.6015 20.9763 20.9764C21.6014 20.3512 22.4493 20 23.3333 20C24.2174 20 25.0652 20.3512 25.6904 20.9764C26.3155 21.6015 26.6667 22.4493 26.6667 23.3334Z"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Finance</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>325 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.25 28.3333L15 33.3333L13.3333 35H26.6667L25 33.3333L23.75 28.3333H16.25ZM5 21.6667H35H5ZM8.33333 28.3333H31.6667C32.5507 28.3333 33.3986 27.9821 34.0237 27.357C34.6488 26.7319 35 25.8841 35 25V8.33333C35 7.44928 34.6488 6.60143 34.0237 5.97631C33.3986 5.35119 32.5507 5 31.6667 5H8.33333C7.44928 5 6.60143 5.35119 5.97631 5.97631C5.35119 6.60143 5 7.44928 5 8.33333V25C5 25.8841 5.35119 26.7319 5.97631 27.357C6.60143 27.9821 7.44928 28.3333 8.33333 28.3333Z"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Technology</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>436 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.6667 33.3333L23.3334 6.66663M30 13.3333L36.6667 20L30 26.6666M10 26.6666L3.33337 20L10 13.3333"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Engineering</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>436 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M35 22.0917C30.2341 24.0187 25.1407 25.0063 20 25C14.695 25 9.63333 23.9667 5 22.0917M20 20H20.0167M26.6667 10V6.66668C26.6667 5.78262 26.3155 4.93478 25.6904 4.30965C25.0652 3.68453 24.2174 3.33334 23.3333 3.33334H16.6667C15.7826 3.33334 14.9348 3.68453 14.3096 4.30965C13.6845 4.93478 13.3333 5.78262 13.3333 6.66668V10H26.6667ZM8.33333 33.3333H31.6667C32.5507 33.3333 33.3986 32.9822 34.0237 32.357C34.6488 31.7319 35 30.8841 35 30V13.3333C35 12.4493 34.6488 11.6014 34.0237 10.9763C33.3986 10.3512 32.5507 10 31.6667 10H8.33333C7.44928 10 6.60143 10.3512 5.97631 10.9763C5.35119 11.6014 5 12.4493 5 13.3333V30C5 30.8841 5.35119 31.7319 5.97631 32.357C6.60143 32.9822 7.44928 33.3333 8.33333 33.3333Z"
+                    class="stroke-red-600"
+                    stroke-width="3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Business</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>786 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="cardWrapper flex items-center md:block md:w-[23%] shrink-0 border-gray-300 border p-4 md:p-10 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M20 8.3333C19.116 8.3333 18.2681 8.68449 17.643 9.30961C17.0179 9.93473 16.6667 10.7826 16.6667 11.6666C16.6667 12.5507 17.0179 13.3985 17.643 14.0237C18.2681 14.6488 19.116 15 20 15C20.8841 15 21.7319 14.6488 22.357 14.0237C22.9822 13.3985 23.3334 12.5507 23.3334 11.6666C23.3334 10.7826 22.9822 9.93473 22.357 9.30961C21.7319 8.68449 20.8841 8.3333 20 8.3333ZM15.286 6.95259C16.5362 5.70235 18.2319 4.99997 20 4.99997C21.7681 4.99997 23.4638 5.70235 24.7141 6.95259C25.9643 8.20283 26.6667 9.89853 26.6667 11.6666C26.6667 13.4347 25.9643 15.1304 24.7141 16.3807C23.4638 17.6309 21.7681 18.3333 20 18.3333C18.2319 18.3333 16.5362 17.6309 15.286 16.3807C14.0357 15.1304 13.3334 13.4347 13.3334 11.6666C13.3334 9.89853 14.0357 8.20283 15.286 6.95259ZM8.33335 15C7.89133 15 7.4674 15.1756 7.15484 15.4881C6.84228 15.8007 6.66669 16.2246 6.66669 16.6666C6.66669 17.1087 6.84228 17.5326 7.15484 17.8451C7.4674 18.1577 7.89133 18.3333 8.33335 18.3333C8.77538 18.3333 9.1993 18.1577 9.51187 17.8451C9.82443 17.5326 10 17.1087 10 16.6666C10 16.2246 9.82443 15.8007 9.51187 15.4881C9.1993 15.1756 8.77538 15 8.33335 15ZM4.79782 13.1311C5.7355 12.1934 7.00727 11.6666 8.33335 11.6666C9.65944 11.6666 10.9312 12.1934 11.8689 13.1311C12.8066 14.0688 13.3334 15.3406 13.3334 16.6666C13.3334 17.9927 12.8066 19.2645 11.8689 20.2022C10.9312 21.1399 9.65944 21.6666 8.33335 21.6666C7.00727 21.6666 5.7355 21.1399 4.79782 20.2022C3.86014 19.2645 3.33335 17.9927 3.33335 16.6666C3.33335 15.3406 3.86014 14.0688 4.79782 13.1311ZM31.6667 15C31.2247 15 30.8007 15.1756 30.4882 15.4881C30.1756 15.8007 30 16.2246 30 16.6666C30 17.1087 30.1756 17.5326 30.4882 17.8451C30.8007 18.1577 31.2247 18.3333 31.6667 18.3333C32.1087 18.3333 32.5326 18.1577 32.8452 17.8451C33.1578 17.5326 33.3334 17.1087 33.3334 16.6666C33.3334 16.2246 33.1578 15.8007 32.8452 15.4881C32.5326 15.1756 32.1087 15 31.6667 15ZM28.1312 13.1311C29.0688 12.1934 30.3406 11.6666 31.6667 11.6666C32.9928 11.6666 34.2645 12.1934 35.2022 13.1311C36.1399 14.0688 36.6667 15.3406 36.6667 16.6666C36.6667 17.9927 36.1399 19.2645 35.2022 20.2022C34.2645 21.1399 32.9928 21.6666 31.6667 21.6666C30.3406 21.6666 29.0688 21.1399 28.1312 20.2022C27.1935 19.2645 26.6667 17.9927 26.6667 16.6666C26.6667 15.3406 27.1935 14.0688 28.1312 13.1311ZM20 23.3321C18.6671 23.3321 17.3648 23.7315 16.261 24.4787C15.2205 25.183 14.4014 26.166 13.8961 27.3131L13.4943 31.6666H26.5058L26.1039 27.3131C25.5986 26.166 24.7796 25.183 23.7391 24.4787C22.6353 23.7315 21.3329 23.3321 20 23.3321ZM30 31.6666H35V30.0001C35 30.0001 35 30.0001 35 30.0001C34.9999 29.3074 34.7841 28.6318 34.3824 28.0675C33.9807 27.5031 33.4131 27.0779 32.7586 26.8509C32.1041 26.624 31.3952 26.6066 30.7303 26.8012C30.3357 26.9167 29.9683 27.1035 29.6451 27.35C29.877 28.1958 30 29.0849 30 30V31.6666ZM28.2163 24.296C27.5167 23.2886 26.634 22.4131 25.6076 21.7183C23.9522 20.5977 21.9991 19.9988 20 19.9988C18.001 19.9988 16.0478 20.5977 14.3924 21.7183C13.3661 22.4131 12.4834 23.2886 11.7838 24.296C11.2929 23.9991 10.7631 23.7651 10.2061 23.6021C8.87641 23.2129 7.4585 23.2477 6.14947 23.7015C4.84043 24.1554 3.70533 25.0058 2.90193 26.1346C2.09854 27.2633 1.66679 28.6144 1.66669 29.9998V33.3333C1.66669 34.2538 2.41288 35 3.33335 35H36.6667C37.5872 35 38.3334 34.2538 38.3334 33.3333V30C38.3333 28.6145 37.9015 27.2633 37.0981 26.1346C36.2947 25.0058 35.1596 24.1554 33.8506 23.7015C32.5415 23.2477 31.1236 23.2129 29.7939 23.6021C29.237 23.7651 28.7071 23.9991 28.2163 24.296ZM10.3549 27.35C10.0318 27.1035 9.66433 26.9167 9.26973 26.8012C8.60488 26.6066 7.89593 26.624 7.24141 26.8509C6.58689 27.0779 6.01934 27.5031 5.61764 28.0675C5.21597 28.6318 5.0001 29.3073 5.00002 30C5.00002 30 5.00002 29.9999 5.00002 30V31.6666H10V30C10 29.0849 10.1231 28.1958 10.3549 27.35Z"
+                    class="fill-red-600"
+                  />
+                </svg>
+              </div>
+              <div class="content grow">
+                <h4 class="md:mt-5 font-bold text-xl">Human Resources</h4>
+                <div class="md:mt-2 jobs flex items-center">
+                  <p>254 jobs available</p>
+                  <div class="arrowIcon ml-auto">
+                    <svg
+                      width="18"
+                      height="15"
+                      viewBox="0 0 18 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.75 7.22571L1.75 7.22571"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                        stroke="#25324B"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="text-red-600 font-semibold mt-5 block md:hidden">
+            Show all jobs
+            <svg
+              class="inline-block ml-2"
+              width="18"
+              height="15"
+              viewBox="0 0 18 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.75 7.22571L1.75 7.22571"
+                class="stroke-red-600"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.7002 1.20131L16.7502 7.22531L10.7002 13.2503"
+                class="stroke-red-600"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="featured-jobs px-3 pb-16">
+        <div class="md:mx-auto md:max-w-[1300px]">
+          <h2 class="text-3xl font-bold mb-5 pt-8">
+            Featured <span class="text-red-600">jobs</span>
+          </h2>
+          <div
+            class="jobs-container py-3 flex gap-x-3 md:gap-x-6 overflow-x-auto"
+          >
+            <div
+              class="jobs-card-wrapper shrink-0 w-72 h-64 border-gray-300 border p-4 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <img src="/assets/Company1.png" alt="Retro" />
+              </div>
+              <div class="content grow">
+                <h4 class="font-bold text-xl mt-2">Email Marketing</h4>
+                <p class="text-gray-500 mt-1">Revolute &#8901; Madrid, Spain</p>
+                <p class="text-gray-500 mt-3">
+                  Revolut is looking for Email Marketing to help team ma ...
+                </p>
+                <div class="chips mt-5">
+                  <span class="yellowChip">Marketing</span>
+                  <span class="greenChip ml-2">Design</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jobs-card-wrapper shrink-0 w-72 h-64 border-gray-300 border p-4 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <img src="/assets/Company2.png" alt="Retro" />
+              </div>
+              <div class="content grow">
+                <h4 class="font-bold text-xl mt-2">Brand Designer</h4>
+                <p class="text-gray-500 mt-1">Dropbox &#8901; Osaka, Japan</p>
+                <p class="text-gray-500 mt-3">
+                  Dropbox is looking for Brand Designer to help the team t ...
+                </p>
+                <div class="chips mt-5">
+                  <span class="yellowChip">Marketing</span>
+                  <span class="greenChip ml-2">Design</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jobs-card-wrapper shrink-0 w-72 h-64 border-gray-300 border p-4 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <img src="/assets/Company4.png" alt="Retro" />
+              </div>
+              <div class="content grow">
+                <h4 class="font-bold text-xl mt-2">Email Marketing</h4>
+                <p class="text-gray-500 mt-1">Pitch &#8901; Niigata, Japan</p>
+                <p class="text-gray-500 mt-3">
+                  Pitch is looking for Customer Manager to join marketing t ...
+                </p>
+                <div class="chips mt-5">
+                  <span class="yellowChip">Marketing</span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="jobs-card-wrapper shrink-0 w-72 h-64 border-gray-300 border p-4 gap-x-5"
+            >
+              <div class="categoryIcon">
+                <img src="/assets/Company3.png" alt="Retro" />
+              </div>
+              <div class="content grow">
+                <h4 class="font-bold text-xl mt-2">Visual Designer</h4>
+                <p class="text-gray-500 mt-1">Blinklist &#8901; Tokyo, Japan</p>
+                <p class="text-gray-500 mt-3">
+                  Blinkist is looking for Visual Designer to help team desi ...
+                </p>
+                <div class="chips mt-5">
+                  <span class="greenChip ml-2">Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="px-3 py-10 bg-[#F8F8FD]">
+        <div class="md:max-w-[1300px] md:mx-auto">
+          <h2 class="text-3xl font-bold mb-5">
+            Latest <span class="text-red-600">jobs</span>
+          </h2>
+          <div class="flex-wrap md:flex">
+            <div class="md:w-1/2 py-3 md:pr-4">
+              <div class="md:flex bg-white p-3 md:p-5">
+                <div class="companyIcon">
+                  <img src="/assets/Company4.png" alt="" />
+                </div>
+                <div class="grow md:ml-6">
+                  <h4 class="font-bold text-xl mt-5 md:mt-0">
+                    Social Media Assistant
+                  </h4>
+                  <p class="text-gray-500 mt-1">Uniqlo &#8901; Tokyo, Japan</p>
+                  <div class="chips flex-wrap flex items-center gap-1 mt-3">
+                    <span class="shrink-0 greenChip">Full-Time</span>
+                    <span class="shrink-0 yellowChip">Marketing</span>
+                    <span class="shrink-0 redChip">Designing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 py-3 md:px-4">
+              <div class="md:flex bg-white p-3 md:p-5">
+                <div class="companyIcon">
+                  <img src="/assets/Company2.png" alt="" />
+                </div>
+                <div class="grow md:ml-6">
+                  <h4 class="font-bold text-xl mt-5 md:mt-0">Brand Designer</h4>
+                  <p class="text-gray-500 mt-1">
+                    Dropbox &#8901; San Fransisco, USA
+                  </p>
+                  <div class="chips flex-wrap flex items-center gap-1 mt-3">
+                    <span class="shrink-0 greenChip">Full-Time</span>
+                    <span class="shrink-0 redChip">Designing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 py-3 md:pr-4">
+              <div class="md:flex bg-white p-3 md:p-5">
+                <div class="companyIcon">
+                  <img src="/assets/Company3.png" alt="" />
+                </div>
+                <div class="grow md:ml-6">
+                  <h4 class="font-bold text-xl mt-5 md:mt-0">
+                    Social Media Assistant
+                  </h4>
+                  <p class="text-gray-500 mt-1">Netlify &#8901; Tokyo, Japan</p>
+                  <div class="chips flex-wrap flex items-center gap-1 mt-3">
+                    <span class="shrink-0 greenChip">Full-Time</span>
+                    <span class="shrink-0 yellowChip">Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2 py-3 md:px-4">
+              <div class="md:flex bg-white p-3 md:p-5">
+                <div class="companyIcon">
+                  <img src="/assets/Company1.png" alt="" />
+                </div>
+                <div class="grow md:ml-6">
+                  <h4 class="font-bold text-xl mt-5 md:mt-0">High in Tech</h4>
+                  <p class="text-gray-500 mt-1">
+                    Revolute &#8901; Tokyo, Japan
+                  </p>
+                  <div class="chips flex-wrap flex items-center gap-1 mt-3">
+                    <span class="shrink-0 greenChip">Full-Time</span>
+                    <span class="shrink-0 yellowChip">Marketing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--  Footer -->
+    <footer class="px-3 md:px-8 bg-[#202430] text-[#D6DDEB] py-10">
+      <div class="md:max-w-[1300px] md:mx-auto">
+        <section class="lg:flex gap-x-11">
+          <div class="flex-[1.3]">
+            <div>
+              <img
+                src="/assets/footer-logo.svg"
+                alt="Logo"
+                title="Campus Japan"
+              />
+            </div>
+            <p class="mt-5">
+              Great platform for the job seeker that passionate about startups.
+              Find your dream job easier.
+            </p>
+          </div>
+          <div class="flex-1 lg:mt-0 mt-6 flex">
+            <div class="flex-1">
+              <h4 class="text-lg font-semibold text-white">About</h4>
+              <ul>
+                <li class="mt-3 hover:opacity-80">
+                  <a href="#!">Companies</a>
+                </li>
+                <li class="mt-3 hover:opacity-80"><a href="#!">Pricing</a></li>
+                <li class="mt-3 hover:opacity-80"><a href="#!">Terms</a></li>
+                <li class="mt-3 hover:opacity-80"><a href="#!">Advice</a></li>
+                <li class="mt-3 hover:opacity-80">
+                  <a href="#!">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-lg font-semibold text-white">Resources</h4>
+              <ul>
+                <li class="mt-3 hover:opacity-80">
+                  <a href="#!">Help Docs</a>
+                </li>
+                <li class="mt-3 hover:opacity-80"><a href="#!">Guide</a></li>
+                <li class="mt-3 hover:opacity-80"><a href="#!">Updates</a></li>
+                <li class="mt-3 hover:opacity-80">
+                  <a href="#!">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex-1 lg:mt-0 mt-8">
+            <h4 class="text-lg font-semibold text-white">
+              Get job notifications
+            </h4>
+            <p class="mt-3">
+              The latest job news, articles, sent to your inbox weekly.
+            </p>
+            <div class="mt-3">
+              <input
+                class="bg-white outline-none text-gray-500 pl-3 py-2 w-full"
+                type="email"
+                placeholder="Email Address"
+              />
+              <button
+                onclick="return false"
+                class="bg-red-600 hover:bg-red-700 transition font-bold text-white mt-3 px-5 py-2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="mt-6 md:mt-16">
+          <hr class="border-[#373A45]" />
+          <p class="text-center mt-8">
+            By Muhammad Faiz Ahmed in 2022. All rights reserved.
+          </p>
+        </section>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
