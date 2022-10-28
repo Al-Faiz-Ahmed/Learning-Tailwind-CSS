@@ -35,3 +35,23 @@
 .cardWrapper:hover .content:has(h4,p){
   @apply text-white
 }
+.jobs-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.jobs-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.yellowChip{
+  @apply text-sm px-5 py-2 rounded-full bg-[#FFF1D7] text-[#FFB836]
+}
+.greenChip{
+  @apply text-sm px-5 py-2 rounded-full bg-[#DDF5EF] text-[#56CDAD]
+}
+.redChip{
+  @apply text-sm px-5 py-2 rounded-full bg-[#FFE0DC] text-[#FF6550]
+}
+
